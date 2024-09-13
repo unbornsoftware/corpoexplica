@@ -1,0 +1,33 @@
+@import 'raboni-styles/scss/importMixins';
+@import '../sass/base/variables';
+
+.pr-box__dropdownPopup{
+    min-width: 300px;
+    padding: 1rem 0;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 7px 18px 0px rgba(0, 0, 0, .09);
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0px;
+    background: #fff;
+    z-index: 2;
+    @include mx-flex();
+    @include mx-flex-column();
+
+    &.toLeft{
+        right: initial;
+        left: 0px;
+    }
+    
+    @include mx-onlymob(1024px){
+        position: fixed !important;
+        width: calc(100% - 30px);
+        left: 15px !important;
+        right: inherit !important;
+        bottom: 90px !important;
+        top: inherit;
+    }
+    
+    
+}

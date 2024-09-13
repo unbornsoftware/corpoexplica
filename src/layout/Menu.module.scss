@@ -1,0 +1,68 @@
+@import 'raboni-styles/scss/importMixins';
+@import '../sass/base/variables';
+
+.un-menu{
+    width: 90px;
+    position: relative;
+    height: 100%;
+    @include mx-flex();
+    @include mx-flex-column();
+    @include mx-flex-align-center();
+    gap:1rem;
+    padding: 1rem 0;
+    padding-top: 1.5rem;
+    border-right: 1px solid #dfdfdf;
+}
+
+.un-logosystem{
+    background-image: url("../assets/images/icon-corpoexplica512-transparent.png");
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.un-menu__content{
+    width: 100%;
+    flex:1;
+    @include mx-flex();
+    @include mx-flex-column();
+    @include mx-flex-align-center();
+    // gap:1.5rem;
+    padding-top: 1rem;
+}
+
+.un-menu__item{
+    width: 100%;
+    cursor: pointer;
+    @include mx-flex();
+    @include mx-flex-center();
+    padding: 1rem 0;
+    color: $text-color;
+    span{
+        font-size: 1.3rem;
+    }
+    
+    &.config{
+        padding: 0;
+        margin-top: auto;
+    }
+    &.active{
+        position: relative;
+        &:before{
+            content: "";
+            width: 2px;
+            height: 30px;
+            border-radius: 3px;
+            background: $primary-color;
+            position: absolute;
+            right: 0px;
+        }
+    }
+    &:hover{
+        color: $primary-color;
+        text-decoration: none;
+    }
+}

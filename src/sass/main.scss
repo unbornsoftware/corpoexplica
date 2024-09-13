@@ -1,0 +1,61 @@
+@import 'raboni-styles/scss/importMixins';
+@import 'base/variables';
+
+//Components
+@import 'components/buttons';
+
+.--pos-relative {
+    position: relative;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* Dispositivos móveis (smartphones) */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+/* Desktops pequenos */
+@media (min-width: 769px) and (max-width: 1024px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+/* Desktops médios e grandes */
+@media (min-width: 1025px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: $font-family-base;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+p {
+    // font-size: 1rem;
+}

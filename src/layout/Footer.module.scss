@@ -1,0 +1,64 @@
+@import 'raboni-styles/scss/importMixins';
+@import '../sass/base/variables';
+
+.un-footer {
+
+  width: 100%;
+
+  .un-footer__content {
+    width: 100%;
+    padding: 1.4rem 0;    
+    box-sizing: border-box;
+
+    @include mx-flex();
+    @include mx-flex-column();
+    @include mx-flex-center();
+    gap:1rem;
+
+    @include mx-responsive(1024px){
+      @include mx-flex-row();
+      @include mx-flex-align-center();
+      @include mx-flex-justify-between();
+    }
+
+  }
+
+  .un-footer__logo {
+    background-image: url("../assets/images/icon-unborn512.png");
+    width: 30px;
+    height: 30px;
+    background-size:contain ;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    border-radius: 5px;
+    opacity: 0.5;
+    display: none;
+  }
+
+  p{
+    flex: 1;
+    margin: 0;
+    max-width: 320px;
+    text-align: center;
+    color: rgba($text-color, 0.5);
+    @include mx-small-text();
+    @include mx-responsive(1024px){
+      max-width: none;
+      text-align: left;
+    }
+  }
+
+  a{
+    @include mx-flex();
+    @include mx-flex-row();
+    @include mx-flex-align-center();
+    gap:0.3rem;
+    color: rgba($text-color, 0.5);
+    @include mx-small-text();
+    &:hover{
+      text-decoration: none;
+      color: rgba($text-color, 0.8);
+    }
+  }
+
+}

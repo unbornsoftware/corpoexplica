@@ -1,0 +1,18 @@
+@import 'raboni-styles/scss/importMixins';
+
+.un-message{
+    margin-top: 100px;
+    @include mx-flex();
+    @include mx-flex-column();
+    @include mx-flex-center();
+    gap:1rem;
+
+    icon{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 2rem;
+        text-align: center;
+        max-width: 500px;
+    }
+}

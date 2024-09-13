@@ -1,0 +1,129 @@
+@import 'raboni-styles/scss/importMixins';
+@import '../sass/base/variables';
+
+.un-user__itemMenu {
+
+  position: relative;
+  @include mx-flex();
+  @include mx-flex-center();
+
+  @include mx-onlymob(768px) {
+    flex: 1;
+  }
+
+  .un-button {
+    width: 40px;
+    height: 40px;
+    @include mx-flex();
+    @include mx-flex-center();
+    border: 1px solid #ccc;
+    background-color: rgba($primary-color, 0.2);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    overflow: hidden;
+    border-radius: 50%;
+
+    span {
+      line-height: 1;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    @include mx-onlymob(768px) {
+      background: #fff;
+      border-color: #fff;
+    }
+  }
+
+}
+
+.un-user__popup {
+  width: 350px;
+  > a {
+    text-decoration: none;
+    padding: 1rem;
+    @include mx-flex();
+    @include mx-flex-row();
+    @include mx-flex-align-center();
+    gap: 0.875rem;
+    border-bottom: 1px solid #eeeeee;
+    color: $text-color;
+
+    &:hover {
+      background: rgba($primary-color, 0.1);
+    }
+
+    &:before {
+      width: 50px;
+      @include mx-flex();
+      @include mx-flex-center();
+      color: $text-color;
+    }
+
+    &:last-of-type {
+      border: 0;
+    }
+
+    &.highlight {
+      background: rgba($primary-color, 0.1);
+    }
+  }
+
+}
+
+.un-user__thumb {
+
+  gap: 0.875rem;
+  padding: 1rem;
+  background: rgba($primary-color, 0.05);
+
+  @include mx-flex();
+  @include mx-flex-row();
+  @include mx-flex-align-center();
+
+  .un-name{
+    flex: 1;
+    @include mx-flex();
+    @include mx-flex-column();
+    p{
+      @include mx-small-text();
+      @include mx-flex();
+      @include mx-flex-row();
+      @include mx-flex-align-center();
+      @include mx-flex-justify-between();
+      &:first-of-type{
+        font-weight: bold;
+      }
+    }
+  }
+
+  a {
+    color: #3b85d9;
+    text-decoration: none;
+  }
+
+  .un-thumb {
+    width: 50px;
+    height: 50px;
+    @include mx-flex();
+    @include mx-flex-center();
+    border: 1px solid #ccc;
+    background-color: rgba($primary-color, 0.2);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    overflow: hidden;
+    border-radius: 50%;
+
+    span {
+      line-height: 1;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

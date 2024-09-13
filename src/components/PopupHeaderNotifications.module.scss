@@ -1,0 +1,74 @@
+@import 'raboni-styles/scss/importMixins';
+@import '../sass/base/variables';
+
+.un-notifications__itemMenu {
+
+  position: relative;
+  @include mx-flex();
+  @include mx-flex-center();
+
+  @include mx-onlymob(768px) {
+    flex: 1;
+  }
+
+  .un-button {
+    width: 40px;
+    height: 40px;
+    @include mx-flex();
+    @include mx-flex-center();
+    @include mx-medium-icon();
+  }
+
+}
+
+.un-notifications__popup {
+
+  width: 400px;
+
+  > p{
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+  }
+
+  .un-item__notification{
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    @include mx-flex();
+    @include mx-flex-row();
+    @include mx-flex-align-center();
+    gap: 0.875rem;
+    border-bottom: 1px solid #eeeeee;
+    color: $text-color;
+
+    &:hover {
+      background: rgba($primary-color, 0.1);
+    }
+
+    &:before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba($primary-color, 1);
+    }
+
+    &:last-of-type {
+      border: 0;
+    }
+
+    &.highlight {
+      background: rgba($primary-color, 0.1);
+    }
+
+    p{
+      flex:1;
+      @include mx-small-text();
+    }
+    span{
+      @include mx-small-text();
+      color: rgba($text-color, 0.6);
+    }
+
+  }
+
+}

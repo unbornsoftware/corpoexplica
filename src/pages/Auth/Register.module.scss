@@ -1,0 +1,83 @@
+@import 'raboni-styles/scss/importMixins';
+@import '../../sass/base/variables';
+
+.pr-page__auth {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include mx-flex();
+    @include mx-flex-column();
+    @include mx-flex-center();
+    gap: 2rem;
+    background: rgba($secondary-color, 0.5);
+    // background-image: url("../../assets/images/bg-authBig.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mx-scroll();
+}
+
+.pr-auth__logo {
+    width: 170px;
+    height: 50px;
+    background-image: url("https://cdn.prod.website-files.com/62684c7a19277b860e45db97/6269a505d68275beee533c44_novo_oce%201.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pr-auth__content {
+    width: 100%;
+    max-width: 350px;
+    @include mx-flex();
+    @include mx-flex-column();
+    @include mx-flex-center();
+    border-radius: 10px;
+    gap: 2rem 1.7rem;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: $card-boxshadow;
+    border: 1px solid rgba($secondary-color, 1);
+    
+}
+
+.pr-auth__title {
+    width: 100%;
+    @include mx-flex();
+    @include mx-flex-column();
+    @include mx-flex-center();
+    gap: 0.5rem;
+
+    h1{
+        font-weight: 500;
+        text-align: center;
+        @include mx-medium-text();  
+    }
+
+    p {
+        text-align: center;
+        color: #868686;
+        max-width: 300px;
+
+        @include mx-responsive(1024px) {
+            max-width: 300px;
+        }
+    }
+
+    &.toleft {
+        @include mx-flex-align-start();
+        @include mx-flex-justify-start();
+
+        h1 {
+            font-size: 1.2em;
+            text-align: left;
+        }
+
+        p {
+            font-size: 0.9em;
+            text-align: left;
+        }
+    }
+}

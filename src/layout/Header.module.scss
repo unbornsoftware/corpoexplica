@@ -1,0 +1,50 @@
+@import 'raboni-styles/scss/importMixins';
+@import '../sass/base/variables';
+
+.un-header {
+
+  .un-header__content {
+    width: 100%;
+    padding: 1.5rem 0;
+    box-sizing: border-box;
+    // border-bottom: 1px solid #dfdfdf;
+
+    @include mx-flex();
+    @include mx-flex-row();
+    @include mx-flex-align-center();
+    @include mx-flex-justify-end();
+    gap: 2rem;
+
+    @include mx-responsive(1024px) {}
+
+  }
+
+}
+
+.un-header__logo {
+  background-image: url("../assets/images/logo-unborn.png");
+  width: 150px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: auto;
+  display: none;
+}
+
+.un-header__menu {
+
+  width: auto;
+  @include mx-flex();
+  @include mx-flex-row();
+  @include mx-flex-align-center();
+  gap: 1.5rem;
+
+  * {
+    text-decoration: none;
+  }
+
+  .un-menu__item {
+    cursor: pointer;
+  }
+
+}

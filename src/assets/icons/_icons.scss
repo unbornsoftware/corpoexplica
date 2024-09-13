@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'icomoon-ub';
+  src:  url('fonts/icomoon.eot?6nxomv');
+  src:  url('fonts/icomoon.eot?6nxomv#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6nxomv') format('truetype'),
+    url('fonts/icomoon.woff?6nxomv') format('woff'),
+    url('fonts/icomoon.svg?6nxomv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+[class^="ub-icon-"]:before,
+[class*=" ub-icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon-ub' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ub-icon-arrow-expand2:before {
+  content: "\e905";
+}
+.ub-icon-attachment:before {
+  content: "\e906";
+}
+.ub-icon-bell:before {
+  content: "\e907";
+}
+.ub-icon-bell2:before {
+  content: "\e908";
+}
+.ub-icon-check-3:before {
+  content: "\e909";
+}
+.ub-icon-config:before {
+  content: "\e90a";
+}
+.ub-icon-delete:before {
+  content: "\e90b";
+}
+.ub-icon-enterprise:before {
+  content: "\e90c";
+}
+.ub-icon-home:before {
+  content: "\e90d";
+}
+.ub-icon-picture:before {
+  content: "\e90e";
+}
+.ub-icon-user:before {
+  content: "\e90f";
+}
+.ub-icon-userconfig:before {
+  content: "\e910";
+  font-size: 1.3rem;
+}
+.ub-icon-whats:before {
+  content: "\e911";
+}
+.ub-icon-airplane:before {
+  content: "\e900";
+}
+.ub-icon-iconunborn:before {
+  content: "\e901";
+}
+.ub-icon-iconunborn-travel:before {
+  content: "\e902";
+}
+.ub-icon-logounborn:before {
+  content: "\e903";
+}
+.ub-icon-logounborn-travel:before {
+  content: "\e904";
+}
