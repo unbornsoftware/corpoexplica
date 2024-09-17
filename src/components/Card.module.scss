@@ -1,0 +1,27 @@
+@import 'raboni-styles/scss/importMixins';
+@import '../sass/base/variables';
+
+
+.un-card{
+    background: #fff;
+    box-shadow: $card-boxshadow;
+    border: 1px solid $secondary-color;
+    @include mx-flex();
+    @include mx-flex-column();
+    border-radius: 1rem;
+}
+
+.un-card__head{
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid $secondary-color;
+    font-weight: 600;
+}
+.un-card__body{
+    @include mx-flex();
+    @include mx-flex-column();
+}
+
+.un-card__foot{
+    padding: 1rem 1.5rem;
+    border-top: 1px solid $secondary-color;
+}

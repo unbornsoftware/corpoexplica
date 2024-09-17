@@ -1,0 +1,53 @@
+@import 'raboni-styles/scss/importMixins';
+@import '../sass/base/variables';
+
+
+
+.un-table__scroll{
+    scrollbar-color: $secondary-color transparent;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    position: relative;
+}
+.un-table{
+    width: 100%;
+    caption-side: bottom;
+    border-collapse: collapse;
+    vertical-align: middle;
+    text-align: left;
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+.un-table{
+    th,td{
+        &:first-child, 
+        &:first-child {
+            padding-left: 1.5rem;
+        }
+        &:last-child, 
+        &:last-child {
+            padding-right: 1.5rem;
+        }
+    }
+    th{
+        padding: .95rem 1rem;
+        background-color: rgba($secondary-color, 0.5);
+        color: rgba($text-color, 0.7);
+        font-weight: 500;
+        font-size: .8125rem;
+        line-height: 1.125rem;
+        vertical-align: middle;
+    }
+    td{
+        padding: .95rem 1rem;
+        border-bottom: 1px solid $secondary-color;
+    }
+
+    &.nowrap{
+        th,td{
+            white-space: nowrap;
+        }
+    }
+}

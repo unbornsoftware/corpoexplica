@@ -31,6 +31,21 @@
   display: none;
 }
 
+.un-header__menu-left{
+
+  flex:1;
+  @include mx-flex();
+  @include mx-flex-row();
+  @include mx-flex-align-center();
+  gap: 0.875rem;
+  margin-left: auto;
+
+  * {
+    text-decoration: none;
+  }
+
+}
+
 .un-header__menu {
 
   width: auto;
