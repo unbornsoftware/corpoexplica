@@ -9,10 +9,10 @@ const Header = () => {
   return (
     <header className={styles["un-header"]}>
       <div className={styles["un-header__content"]}>
-        <div className='un-page__title'>
+        {/* <div className='un-page__title'>
           <span className='pr-icon-arrow-right2'></span>
           <p>Home / Dashboard</p>
-        </div>
+        </div> */}
         <div className={styles["un-header__menu"]}>
           <div className={styles["un-menu__item"]}>
             <PopupHeaderNotifications />

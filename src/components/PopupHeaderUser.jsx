@@ -47,7 +47,7 @@ const PopupHeaderUser = () => {
               </div>
               <Link to="/account" className="ub-icon-userconfig">Conta</Link>
               <Link to="/" className="ub-icon-whats">Contatar Suporte</Link>
-              <Link onClick={handleLogout} className="pr-icon-arrow-right2">Sair</Link>
+              <Link onClick={handleLogout} className="pr-icon-arrow-right">Sair</Link>
             </div>
           </DropdownPopup>
         </div>

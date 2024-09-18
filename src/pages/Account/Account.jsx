@@ -6,7 +6,7 @@ const Account = () => {
     <>
       <div className='un-page__content'>
         <div className='un-page__title'>
-            <span className='pr-icon-home'></span>
+            <span className='pr-icon-arrow-right2'></span>
             <p>Home / Account</p>
         </div>
       </div>

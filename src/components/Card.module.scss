@@ -14,7 +14,13 @@
 .un-card__head{
     padding: 1rem 1.5rem;
     border-bottom: 1px solid $secondary-color;
-    font-weight: 600;
+    @include mx-flex();
+    @include mx-flex-row();
+    @include mx-flex-align-center();
+    p{
+        width: auto;
+        font-weight: 600;
+    }
 }
 .un-card__body{
     @include mx-flex();
