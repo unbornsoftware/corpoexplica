@@ -14,8 +14,8 @@ import App from './App.jsx'
 import NotFound from './pages/404/NotFound.jsx'
 import Login from './pages/Auth/Login.jsx'
 import Register from './pages/Auth/Register.jsx'
-import Home from './pages/Dashboard/Home.jsx'
-import Account from './pages/Account/Account.jsx'
+import Dashboard from './pages/Dashboard/Dashboard.jsx'
+import Services from './pages/Services/Services.jsx'
 
 //redirect routes
 import PublicRoute from './components/PublicRoute.jsx'
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
     errorElement: <Navigate to="/notfound" replace />,
     children: [
       { path: '', element: <Navigate to="/dashboard" replace /> },
-      { path: '/dashboard', element: <Home /> },
-      { path: '/account', element: <Account /> },
+      { path: '/dashboard', element: <Dashboard /> },
+      { path: '/services', element: <Services /> },
       { path: '/notfound', element: <NotFound /> },
     ],
   },

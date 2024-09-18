@@ -1,0 +1,58 @@
+@import 'raboni-styles/scss/importMixins';
+@import '../sass/base/variables';
+
+.un-create__itemMenu {
+
+    position: relative;
+    @include mx-flex();
+    @include mx-flex-center();
+
+    @include mx-onlymob(768px) {
+        flex: 1;
+    }
+
+    .un-button {
+        width: 40px;
+        height: 40px;
+        @include mx-flex();
+        @include mx-flex-center();
+        @include mx-medium-icon();
+        span{
+            background: rgba($primary-color, 1);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            color: #fff;
+            @include mx-flex();
+            @include mx-flex-center();
+        }
+    }
+
+}
+
+.un-create__popup {
+
+    width: 220px;
+
+
+    .un-item__create {
+        text-decoration: none;
+        padding: 0.5rem 1.5rem;
+        @include mx-flex();
+        @include mx-flex-row();
+        @include mx-flex-align-center();
+        @include mx-flex-justify-end();
+        gap: 0.875rem;
+
+        &:before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba($primary-color, 1);
+            display: none;
+        }
+
+    }
+
+}

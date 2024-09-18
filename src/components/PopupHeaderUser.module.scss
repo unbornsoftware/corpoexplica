@@ -16,8 +16,8 @@
     height: 40px;
     @include mx-flex();
     @include mx-flex-center();
-    border: 1px solid #ccc;
-    background-color: rgba($primary-color, 0.2);
+    border: 1px solid $grey-color;
+    background-color: rgba($grey-color, 0.2);
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -110,8 +110,8 @@
     height: 50px;
     @include mx-flex();
     @include mx-flex-center();
-    border: 1px solid #ccc;
-    background-color: rgba($primary-color, 0.2);
+    border: 1px solid $grey-color;
+    background-color: rgba($grey-color, 0.2);
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
