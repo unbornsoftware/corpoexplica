@@ -3,20 +3,6 @@
 
 .un-box__servicesList {
 
-    .service-play {
-        text-decoration: none;
-        cursor: pointer;
-
-        icon {
-            color: $primary-color;
-            font-size: 1.5rem;
-        }
-
-        &:hover {
-            opacity: 0.7;
-        }
-    }
-
     .service-progress{
         @include mx-flex();
         @include mx-flex-row();

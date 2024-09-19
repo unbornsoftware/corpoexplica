@@ -13,12 +13,12 @@ const Menu = () => {
         <NavLink to="/services" className={({ isActive }) => isActive ? `${styles["un-menu__item"]} ${styles["active"]}` : styles["un-menu__item"]}>
           <span className="ub-icon-bell2"></span>
         </NavLink>
-        {/* <NavLink to="/func2" className={({ isActive }) => isActive ? `${styles["un-menu__item"]} ${styles["active"]}` : styles["un-menu__item"]}>
-          <span className="ub-icon-enterprise"></span>
+        <NavLink to="/clients" className={({ isActive }) => isActive ? `${styles["un-menu__item"]} ${styles["active"]}` : styles["un-menu__item"]}>
+          <span className="pr-icon-users"></span>
         </NavLink>
-        <NavLink to="/func3" className={({ isActive }) => isActive ? `${styles["un-menu__item"]} ${styles["active"]}` : styles["un-menu__item"]}>
-          <span className="ub-icon-attachment"></span>
-        </NavLink> */}
+        <NavLink to="/specialists" className={({ isActive }) => isActive ? `${styles["un-menu__item"]} ${styles["active"]}` : styles["un-menu__item"]}>
+          <span className="pr-icon-star"></span>
+        </NavLink>
         <NavLink to="/config" className={({ isActive }) => isActive ? `${styles["un-menu__item"]} ${styles["config"]} ${styles["active"]}` : `${styles["config"]} ${styles["un-menu__item"]}`}>
           <span className="ub-icon-config"></span>
         </NavLink>

@@ -10,6 +10,7 @@
     scrollbar-color: transparent transparent;
     position: relative;
 }
+
 .un-table{
     width: 100%;
     caption-side: bottom;
@@ -20,6 +21,7 @@
     font-size: .875rem;
     line-height: 1.25rem;
 }
+
 .un-table{
     th,td{
         &:first-child, 
@@ -51,4 +53,5 @@
             white-space: nowrap;
         }
     }
+
 }

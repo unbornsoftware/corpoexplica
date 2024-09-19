@@ -1,0 +1,20 @@
+@import 'raboni-styles/scss/importMixins';
+@import '../../sass/base/variables';
+
+.un-box__clientList {
+
+    .client-edit {
+        text-decoration: none;
+        cursor: pointer;
+
+        icon {
+            color: $primary-color;
+            font-size: 1.5rem;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+}

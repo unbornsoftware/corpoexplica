@@ -12,11 +12,26 @@
   }
 
   .un-button {
-    width: 40px;
-    height: 40px;
+
+    width: 35px;
+    height: 35px;
     @include mx-flex();
     @include mx-flex-center();
-    @include mx-medium-icon();
+    @include mx-small-icon();
+
+    border: 1px solid $grey-color;
+    background-color: rgba($grey-color, 0.2);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    overflow: hidden;
+    border-radius: 50%;
+
+    @include mx-onlymob(768px) {
+      background: #fff;
+      border-color: #fff;
+    }
+
   }
 
 }

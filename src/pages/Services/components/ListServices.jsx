@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./ListServices.module.scss";
-import Card from "../../../components/Card";
 import Table from "../../../components/Table";
 import BarProgressThin from "../../../components/BarProgressThin";
 
@@ -34,9 +33,10 @@ const ListServices = () => {
               <td>01 ago, 2024</td>
               <td>--</td>
               <td>
-                <a className={`${styles["service-play"]}`}>
-                  <icon className={`${"pr-icon-play-circle"}`}></icon>
-                </a>
+                <div className='actions'>
+                  <a><icon className={`${"pr-icon-stop-circle"} ${"danger"}`}></icon></a>
+                  <a><icon className={`${"pr-icon-play-circle"}`}></icon></a>
+                </div>
               </td>
             </tr>
             <tr>
@@ -53,9 +53,10 @@ const ListServices = () => {
               <td>01 ago, 2024</td>
               <td>--</td>
               <td>
-                <a className={`${styles["service-play"]}`}>
-                  <icon className={`${"pr-icon-play-circle"}`}></icon>
-                </a>
+                <div className='actions'>
+                  <a><icon className={`${"pr-icon-stop-circle"} ${"danger"}`}></icon></a>
+                  <a><icon className={`${"pr-icon-play-circle"}`}></icon></a>
+                </div>
               </td>
             </tr>
             <tr>
@@ -72,9 +73,10 @@ const ListServices = () => {
               <td>01 ago, 2024</td>
               <td>--</td>
               <td>
-                <a className={`${styles["service-play"]}`}>
-                  <icon className={`${"pr-icon-play-circle"}`}></icon>
-                </a>
+                <div className='actions'>
+                  <a><icon className={`${"pr-icon-stop-circle"} ${"danger"}`}></icon></a>
+                  <a><icon className={`${"pr-icon-play-circle"}`}></icon></a>
+                </div>
               </td>
             </tr>
             <tr>
@@ -91,9 +93,10 @@ const ListServices = () => {
               <td>01 ago, 2024</td>
               <td>--</td>
               <td>
-                <a className={`${styles["service-play"]}`}>
-                  <icon className={`${"pr-icon-play-circle"}`}></icon>
-                </a>
+                <div className='actions'>
+                  <a><icon className={`${"pr-icon-stop-circle"} ${"danger"}`}></icon></a>
+                  <a><icon className={`${"pr-icon-play-circle"}`}></icon></a>
+                </div>
               </td>
             </tr>
           </tbody>

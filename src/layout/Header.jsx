@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className={styles["un-header"]}>
       <div className={styles["un-header__content"]}>
-        <div className={styles["un-header__menu"]}>
+        <div className={styles["un-header__menu-right"]}>
           <div className={styles["un-menu__item"]}>
             <PopupHeaderCreate />
           </div>

@@ -46,13 +46,13 @@
 
 }
 
-.un-header__menu {
+.un-header__menu-right {
 
   width: auto;
   @include mx-flex();
   @include mx-flex-row();
   @include mx-flex-align-center();
-  gap: 1.5rem;
+  gap: 1rem;
 
   * {
     text-decoration: none;

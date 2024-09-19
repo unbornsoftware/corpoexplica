@@ -12,8 +12,8 @@
   }
 
   .un-button {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     @include mx-flex();
     @include mx-flex-center();
     border: 1px solid $grey-color;

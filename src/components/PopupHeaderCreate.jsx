@@ -12,26 +12,25 @@ const PopupHeaderCreate = () => {
 
   return (
     <div className={styles["un-create__itemMenu"]}>
-      <button
-        className={styles["un-button"]}
-        onClick={() => setPopupOpen(isPopupOpen ? false : true)}
-      >
+      <button className={styles["un-button"]} onClick={() => setPopupOpen(isPopupOpen ? false : true)}>
         <span className="pr-icon-plus"></span>
       </button>
-      <DropdownPopup
-        isOpen={isPopupOpen}
-        closePopup={() => setPopupOpen(false)}
-      >
+      <DropdownPopup isOpen={isPopupOpen} closePopup={() => setPopupOpen(false)}>
         <div className={styles["un-create__popup"]}>
           <div className={styles["un-item__create"]}>
-            <button className="app-button outline small primary pr-icon-plus">
+            <Link to={"/client-register"} className="app-button outline small primary pr-icon-plus">
               Cadastrar Cliente
-            </button>
+            </Link>
           </div>
           <div className={styles["un-item__create"]}>
-            <button className="app-button outline small primary pr-icon-plus">
+            <Link to={"/specialist-register"} className="app-button outline small primary pr-icon-plus">
+              Cadastrar Especialista
+            </Link>
+          </div>
+          <div className={styles["un-item__create"]}>
+            <Link className="app-button outline small primary pr-icon-plus">
               Agendar Atendimento
-            </button>
+            </Link>
           </div>
         </div>
       </DropdownPopup>

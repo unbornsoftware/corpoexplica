@@ -17,6 +17,14 @@ import Register from './pages/Auth/Register.jsx'
 import Dashboard from './pages/Dashboard/Dashboard.jsx'
 import Services from './pages/Services/Services.jsx'
 
+import Specialist from './pages/Specialists/SpecialistList.jsx'
+import SpecialistRegister from './pages/Specialists/Specialist.jsx'
+import SpecialistUpdate from './pages/Specialists/SpecialistEdit.jsx'
+
+import Clients from './pages/Clients/ClientList.jsx'
+import ClientRegister from './pages/Clients/Client.jsx'
+import ClientUpdate from './pages/Clients/ClientEdit.jsx'
+
 //redirect routes
 import PublicRoute from './components/PublicRoute.jsx'
 import ProtectedRoute from './components/ProtectedRoute.jsx'
@@ -30,6 +38,16 @@ const router = createBrowserRouter([
       { path: '', element: <Navigate to="/dashboard" replace /> },
       { path: '/dashboard', element: <Dashboard /> },
       { path: '/services', element: <Services /> },
+      
+      //Especialists
+      { path: '/specialists', element: <Specialist /> },
+      { path: '/specialist-register', element: <SpecialistRegister /> },
+      { path: '/specialist-update', element: <SpecialistUpdate /> },
+      //Clients
+      { path: '/clients', element: <Clients /> },
+      { path: '/client-register', element: <ClientRegister /> },
+      { path: '/client-edit', element: <ClientUpdate /> },
+
       { path: '/notfound', element: <NotFound /> },
     ],
   },

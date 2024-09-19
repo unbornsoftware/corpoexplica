@@ -4,10 +4,6 @@
 //Components
 @import 'components/buttons';
 
-.--pos-relative {
-    position: relative;
-}
-
 html {
     font-size: 16px;
 }
@@ -56,6 +52,29 @@ h2 {
     font-size: 1.2rem;
 }
 
-p {
-    // font-size: 1rem;
+table {
+    .actions {
+        @include mx-flex();
+        @include mx-flex-row();
+        @include mx-flex-center();
+        gap:1rem;
+        a {
+            text-decoration: none;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+        
+        icon {
+            color: $primary-color;
+            font-size: 1.5rem;
+            &.danger{
+                color: $danger-color;
+            }
+        }
+        
+
+    }
 }
