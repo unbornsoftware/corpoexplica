@@ -34,8 +34,8 @@ const SpecialistList = () => {
                   <td>--</td>
                   <td>
                     <div className='actions'>
-                      <a><icon className={`${"pr-icon-trash-2"} ${"danger"}`}></icon></a>
-                      <a><icon className={`${"pr-icon-edit"}`}></icon></a>
+                      <a><span className={`${"pr-icon-trash-2"} ${"danger"}`}></span></a>
+                      <a><span className={`${"pr-icon-edit"}`}></span></a>
                     </div>
                   </td>
                 </tr>

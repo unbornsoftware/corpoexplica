@@ -34,8 +34,8 @@ const ListServices = () => {
               <td>--</td>
               <td>
                 <div className='actions'>
-                  <a><icon className={`${"pr-icon-stop-circle"} ${"danger"}`}></icon></a>
-                  <a><icon className={`${"pr-icon-play-circle"}`}></icon></a>
+                  <a><span className={`${"pr-icon-stop-circle"} ${"danger"}`}></span></a>
+                  <a><span className={`${"pr-icon-play-circle"}`}></span></a>
                 </div>
               </td>
             </tr>
@@ -54,8 +54,8 @@ const ListServices = () => {
               <td>--</td>
               <td>
                 <div className='actions'>
-                  <a><icon className={`${"pr-icon-stop-circle"} ${"danger"}`}></icon></a>
-                  <a><icon className={`${"pr-icon-play-circle"}`}></icon></a>
+                  <a><span className={`${"pr-icon-stop-circle"} ${"danger"}`}></span></a>
+                  <a><span className={`${"pr-icon-play-circle"}`}></span></a>
                 </div>
               </td>
             </tr>
@@ -74,8 +74,8 @@ const ListServices = () => {
               <td>--</td>
               <td>
                 <div className='actions'>
-                  <a><icon className={`${"pr-icon-stop-circle"} ${"danger"}`}></icon></a>
-                  <a><icon className={`${"pr-icon-play-circle"}`}></icon></a>
+                  <a><span className={`${"pr-icon-stop-circle"} ${"danger"}`}></span></a>
+                  <a><span className={`${"pr-icon-play-circle"}`}></span></a>
                 </div>
               </td>
             </tr>
@@ -94,8 +94,8 @@ const ListServices = () => {
               <td>--</td>
               <td>
                 <div className='actions'>
-                  <a><icon className={`${"pr-icon-stop-circle"} ${"danger"}`}></icon></a>
-                  <a><icon className={`${"pr-icon-play-circle"}`}></icon></a>
+                  <a><span className={`${"pr-icon-stop-circle"} ${"danger"}`}></span></a>
+                  <a><span className={`${"pr-icon-play-circle"}`}></span></a>
                 </div>
               </td>
             </tr>

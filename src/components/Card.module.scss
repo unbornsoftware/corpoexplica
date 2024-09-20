@@ -25,6 +25,9 @@
 .un-card__body{
     @include mx-flex();
     @include mx-flex-column();
+    &.padding{
+        padding: 1.5rem;
+    }
 }
 
 .un-card__foot{

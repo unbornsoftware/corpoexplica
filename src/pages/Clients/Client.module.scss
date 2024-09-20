@@ -1,2 +1,27 @@
 @import 'raboni-styles/scss/importMixins';
 @import '../../sass/base/variables';
+
+.un-form__clients{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    @include mx-flex();
+    @include mx-flex-column();
+    gap:1.5rem;
+}
+.un-form__basics{
+    width: 100%;
+}
+.un-form__outhers{
+    width: 100%;
+    @include mx-flex();
+    @include mx-flex-column();
+    gap:1rem;
+}
+.un-form__actions{
+    @include mx-flex();
+    @include mx-flex-row();
+    @include mx-flex-align-start();
+    @include mx-flex-justify-end();
+    gap:1rem;
+}

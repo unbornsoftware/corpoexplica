@@ -50,16 +50,13 @@ const ClientList = () => {
                 </tr>
               </thead>
               <tbody>
-                {clients &&
-                  clients.map((client) => {
+               {Array.isArray(clients) && clients.length > 0 && clients.map((client) => {
 
                     const allowedTypes = ["email", "telephone"];
                     const filteredContacts = client.contacts.filter((contact) => allowedTypes.includes(contact.type));
 
                     const emailContact = filteredContacts.find(contact => contact.type === "email");
                     const telefoneContact = filteredContacts.find(contact => contact.type === "telephone");
-
-                    console.log(client);
 
                     return (
                       <tr key={client.id}>
@@ -69,12 +66,10 @@ const ClientList = () => {
                         <td>
                           <div className="actions">
                             <a>
-                              <icon
-                                className={`${"pr-icon-trash-2"} ${"danger"}`}
-                              ></icon>
+                              <span className={`${"pr-icon-trash-2"} ${"danger"}`}></span>
                             </a>
                             <a>
-                              <icon className={`${"pr-icon-edit"}`}></icon>
+                              <span className={`${"pr-icon-edit"}`}></span>
                             </a>
                           </div>
                         </td>

@@ -9,7 +9,7 @@ const NotFound = () => {
           <p>Home / Página não encontrada</p>
         </div>
         <div className={styles["un-message"]}>
-          <icon className="pr-icon-warning"></icon>
+          <span className="pr-icon-warning"></span>
           <p>Desculpe, essa funcionalidade ainda não está disponível!</p>
         </div>
       </div>
