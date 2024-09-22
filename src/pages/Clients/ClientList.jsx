@@ -13,7 +13,7 @@ import { useResetComponentMessage } from "../../hooks/useResetComponentMessage";
 
 //Redux
 import {
-  getAllClients,
+  getAllClients, removeClient,
   resetMessage as resetClientMessage,
 } from "../../slices/clientSlice";
 
@@ -21,7 +21,15 @@ const ClientList = () => {
   const dispatch = useDispatch();
   const resetMessage = useResetComponentMessage(dispatch, resetClientMessage);
 
-  const { clients, loading } = useSelector((state) => state.client);
+  const { clients, loading, success, error } = useSelector((state) => state.client);
+
+
+  const handleDeleteClient = async(id) => {
+
+
+
+  }
+
 
   //Load clients data
   useEffect(() => {
@@ -52,20 +60,18 @@ const ClientList = () => {
               <tbody>
                {Array.isArray(clients) && clients.length > 0 && clients.map((client) => {
 
-                    const allowedTypes = ["email", "telephone"];
-                    const filteredContacts = client.contacts.filter((contact) => allowedTypes.includes(contact.type));
-
-                    const emailContact = filteredContacts.find(contact => contact.type === "email");
-                    const telefoneContact = filteredContacts.find(contact => contact.type === "telephone");
+                    const allowedTypes = ["cellphone"];
+                    const filteredContacts = client.contacts?.filter((contact) => allowedTypes.includes(contact.type));
+                    const telefoneContact = filteredContacts?.find(contact => contact.type === "cellphone");
 
                     return (
                       <tr key={client.id}>
                         <td>{client.name}</td>
-                        <td>{emailContact ? emailContact.value : "---"}</td>
+                        <td>{client.email}</td>
                         <td>{telefoneContact ? telefoneContact.value : "---"}</td>
                         <td>
                           <div className="actions">
-                            <a>
+                            <a onClick={handleDeleteClient(client.id)}>
                               <span className={`${"pr-icon-trash-2"} ${"danger"}`}></span>
                             </a>
                             <a>

@@ -15,7 +15,7 @@
 .un-form__outhers{
     width: 100%;
     @include mx-flex();
-    @include mx-flex-column();
+    @include mx-flex-row();
     gap:1rem;
 }
 .un-form__actions{

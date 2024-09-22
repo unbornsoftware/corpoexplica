@@ -17,6 +17,7 @@ export const registerClient = createAsyncThunk(
     const token = thunkAPI.getState().auth.user.token;
     const data = await clientService.registerClient(client, token);
     if (data.errors) {
+      debugger;
       return thunkAPI.rejectWithValue(data.errors[0]);
     }
     return data;

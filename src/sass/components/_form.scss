@@ -85,10 +85,6 @@
 
   }
 
-  kpm-field-badge {
-    display: none;
-  }
-
   .un-checkbox {
 
     @include mx-flex();
@@ -344,9 +340,5 @@
       background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' fill='none'%3E%3Ccircle cx='13' cy='13' r='6.933' fill='%23fff'/%3E%3C/svg%3E")
     }
   }
-
-
-
-
 
 }
