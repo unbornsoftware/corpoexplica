@@ -20,7 +20,7 @@ import {
 const Client = () => {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
-  const [birthday, setBirthday] = useState();
+  const [birthdate, setBirthdate] = useState();
   const [active, setActive] = useState(true);
   const [specialist, setSpecialist] = useState(false);
   const [document, setDocument] = useState();
@@ -28,7 +28,7 @@ const Client = () => {
 
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  1;
+  
   const resetMessage = useResetComponentMessage(dispatch, resetClientMessage);
   const { loading, error } = useSelector((state) => state.client);
 
@@ -51,7 +51,7 @@ const Client = () => {
     const client = {
       name,
       email,
-      birthday,
+      birthdate,
       specialist,
       active,
       documents: documents,
@@ -117,8 +117,8 @@ const Client = () => {
                       </label>
                       <label className="flex-1 un-input">
                         <input
-                          value={birthday || ""}
-                          onChange={(e) => setBirthday(e.target.value)}
+                          value={birthdate || ""}
+                          onChange={(e) => setBirthdate(e.target.value)}
                           type="date"
                           // required
                           placeholder="Data Nascimento"
